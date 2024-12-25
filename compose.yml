@@ -3,7 +3,7 @@ services:
     image: fastapi
     build:
       context: fastapi
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.dev
     ports:
       - "8000:8000"
     volumes:

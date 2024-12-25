@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# Distribution / packaging
+.eggs/
+.pip/
+build/
+dist/
+*.egg-info/
+.installed.cfg
+PKG-INFO
+
+# Django session files
+*.session-backend
+
+# Flask session files
+*.session
+
+# PyInstaller
+*.spec
+
+# Unit test / coverage reports
+.pytest_cache/
+coverage/
+htmlcov/
+
+# Jupyter Notebook files
+.ipynb_checkpoints
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Virtualenv
+.venv/
+env/
+
+# Testing
+.pytest_cache/
+
+# Local configuration
+*.env
+.env.*
+local.settings.py
+
+# Generated files
+.DS_Store
+Thumbs.db
