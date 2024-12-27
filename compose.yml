@@ -24,3 +24,16 @@ services:
     volumes:
       - ./vue-client:/app
       - ./vue-client/node_modules:/app/node_modules
+  # telegram-bot:
+  #   build: .
+  #   container_name: telegram-bot-container
+  #   environment:
+  #     TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN} # Use environment variable from .env file
+  #   volumes:
+  #     - ./telegram-bot:/telegram-bot # Mount current directory to /app in the container
+  #   restart: unless-stopped
+  #   logging:
+  #     driver: "json-file"
+  #     options:
+  #       max-size: "10m"
+  #       max-file: "3"

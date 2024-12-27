@@ -12,6 +12,10 @@ import librosa
 from yamnet import YamnetInstance
 import utils
 
+from bot import init_bot, trigger_broadcast
+from telegram import Update
+from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
+
 app = FastAPI()
 
 app.add_middleware(
@@ -61,6 +65,19 @@ async def upload_file(file: UploadFile = File(...)):
 
     except Exception as e:
         response = {"error": str(e)}
+
+    try:
+        print("creating application")
+        application = (
+            ApplicationBuilder()
+            .token("7545487742:AAHK31bh5-4YddWAiUJKXBjJVKMQ0bF8beE")
+            .build()
+        )
+        print("sending broadcast")
+        await trigger_broadcast(application, response)
+        print("broadcast sended")
+    except Exception as e:
+        print(e)
 
     return response
 
