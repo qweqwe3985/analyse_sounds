@@ -30,16 +30,16 @@
 ``docker compose up --build``<br/>
 1. Это запустит Fastapi с эндпоинтом(/upload-audio/), который получает wav файл и координаты события и возвращает 5 самых часто встречающихся звуков.<br/>
     * Также запустится Вэб-клиент на Vue.js для более удобного взаимодействия с эндпоинтом.
-    <br/><br/>![image](https://github.com/user-attachments/assets/36f1f865-6795-43e4-a07c-3da24a32eb04)<br/><br/>
-
+      <br/><br/>![image](https://github.com/user-attachments/assets/36f1f865-6795-43e4-a07c-3da24a32eb04)<br/><br/>
+      
 2. Анализ происходит при помощи Модели Yamnet из TensorflowHub.<br/>
 
 3. Если среди звуков попадуться звуки из категорий {"Explosion", "Eruption", "Firecracker", "Crackle", "Shatter"}, telegram-бот отправит оповещение вида:
- <br/><br/>![image](https://github.com/user-attachments/assets/242f0df1-8197-4a9d-ba1e-8246162b7b52)<br/><br/>
-
-4. Также, командой ``python client.py`` можно запустить другой клиент, который постоянно считывает аудиопоток с микрофона и также отправляет на (/upload-audio/). Таким образом мы моделируем устройство, благодаря которому будут присылаться оповещения об опасных звуках (таких как взрыв и т.д.).<br/>
+     <br/><br/>![image](https://github.com/user-attachments/assets/242f0df1-8197-4a9d-ba1e-8246162b7b52)<br/><br/>
+     
+5. Также, командой ``python client.py`` можно запустить другой клиент, который постоянно считывает аудиопоток с микрофона и также отправляет на (/upload-audio/). Таким образом мы моделируем устройство, благодаря которому будут присылаться оповещения об опасных звуках (таких как взрыв и т.д.).<br/>
     * Если таких клиентов будет много, можно будет выстроить систему оповещений (например: для города или производства).
-
+       <br/><br/>![image](https://github.com/user-attachments/assets/8f127b34-8d5b-4865-9d22-21feb43266b9)<br/><br/>
 ## Авторы
 - Кочеров Владимир (тимлид, python-клиент, сервер, идея) - [@phoenix1833](https://t.me/phoenix1833)
 - Петухов Роман (идея, реализация в Jupyter) - [@phys1x1](https://t.me/phys1x1)
@@ -47,4 +47,4 @@
 - Голендухин Игнат (рефакторинг кода, презентация) - [@AwakeandSedate](https://t.me/AwakeandSedate)
 
 ## Ссылка на презентацию:
-(https://docs.google.com/presentation/d/1rVg-vR4z_x6NuK7AY3rsndTw-s9tRKl3Ned2IVLnayA/edit?usp=sharing)
+https://docs.google.com/presentation/d/1rVg-vR4z_x6NuK7AY3rsndTw-s9tRKl3Ned2IVLnayA/edit?usp=sharing
