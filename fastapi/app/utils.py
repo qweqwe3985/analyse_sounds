@@ -27,3 +27,13 @@ def librosa_analyse(audio, sr=16000):
     except Exception as e:
         print(e)
         return None
+
+
+# Функция для проверки наличия категорий
+def check_categories(response_list, categories):
+    found_categories = set()  # Множество для найденных категорий
+    for item in response_list:
+        for category in categories:
+            if category.lower() in item.lower():  # Поиск без учета регистра
+                found_categories.add(category)
+    return found_categories if found_categories else False
