@@ -1,3 +1,9 @@
+# Часть 1. Реализация примера в Jupyter Notebook
+ **1.** Файл с нотбуком: https://github.com/qweqwe3985/analyse_sounds/blob/main/Jupyter/Main.ipynb
+ **2.** Readme для ноутбука: https://github.com/qweqwe3985/analyse_sounds/blob/main/Jupyter/README.ipynb
+    
+# Часть 2. Пример реализации для практического применения
+
 **Для локального запуска, напишите в терминале:**
 ``docker compose up --build``<br/>
 **1.** Это запустит Fastapi с эндпоинтом(/upload-audio/), который получает wav файл и координаты события и возвращает 5 самых часто встречающихся звуков.<br/>
