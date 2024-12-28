@@ -1,5 +1,5 @@
 # Часть 1. Реализация примера в Jupyter Notebook
- **1.** Файл с нотбуком: https://github.com/qweqwe3985/analyse_sounds/blob/main/Jupyter/Main.ipynb
+ **1.** Файл с нотбуком: https://github.com/qweqwe3985/analyse_sounds/blob/main/Jupyter/Main.ipynb <br/>
  **2.** Readme для ноутбука: https://github.com/qweqwe3985/analyse_sounds/blob/main/Jupyter/README.ipynb
     
 # Часть 2. Пример реализации для практического применения
